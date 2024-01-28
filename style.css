@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-weight: 400;
+    color: #222222;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+h2{
+    line-height: 1.2;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: blue;
+}
+
+.container{
+    width: 1180px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.prec{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 30px 0px;
+}
+
+.prec .header{
+    width: 760px;
+    max-width: 95%;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.prec .header h2{
+    font-size: 2.6em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.prec .header p{
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+
+.prec .tabela{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.prec .tabela .caixa{
+    width: 350px;
+    max-width: 100%;
+    background: #fff;
+    padding: 30px 20px;
+    margin: 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 35px rgb(33 33 33 / 40%);
+    transition: 0.5s;
+}
+
+.prec .tabela .caixa:hover{
+    width: 350px;
+    max-width: 100%;
+    background: #fff;
+    padding: 30px 20px;
+    margin: 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 35px rgb(33 33 33 / 40%);
+    transform: scale(0.9);
+}
+
+.prec .tabela .caixa:nth-child(2){
+    background: #664add;
+    color: #fff;
+}
+
+.prec .tabela .caixa .valor{
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.prec .tabela .caixa .valor:after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background: #664add;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prec .tabela .caixa:nth-child(2) .valor:after{
+    background: #fff;
+}
+
+.prec .tabela .caixa .valor h3{
+    position: relative;
+    font-size: 3em;
+    width: 80%;
+    margin: 0 auto 25px;
+}
+
+.prec .tabela .caixa .desc{
+    width: 170px;
+    margin: 0 auto 25px;
+}
+
+.prec .tabela .caixa .desc ul{
+    list-style: none;
+}
+
+.prec .tabela .caixa .desc ul li{
+    display: block;
+    margin-bottom: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.prec .tabela .caixa .desc ul li:hover{
+    transform: translateX(-10px);
+}
+
+.prec .tabela .caixa .desc ul li i{
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+.prec .tabela .caixa .botao{
+    text-align: center;
+}
+
+.prec .tabela .caixa .botao a{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #664add;
+    border: 2px solid #664add;
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.prec .tabela .caixa .botao a:hover{
+    transform: scale(0.9);
+}
+
+.prec .tabela .caixa:nth-child(2) .botao a{
+    background: #fff;
+    color: #664add;
+    border: 2px solid #fff;
+
+}
+
+.botao .msg{
+    display: none;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px){
+    span.msg{
+        display: none;
+    }
+
+    .botao .msg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        margin: 10px;
+    }
+}
